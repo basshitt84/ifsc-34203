@@ -74,6 +74,16 @@ body {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+
+#content img {
+float: right;
+border-style: double;
+border-width: 20px;
+border-radius: 15%;
+border-color: #d5897e;
+margin: 20px;
+}
+
 #footer {
   background-color: #000;
   color: #fff;
@@ -102,6 +112,13 @@ a[href="#top"] {
    color: #d5897e
 
 }
+a[href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbasshitt84.github.io%2Fifsc-34203%2F"] { 
+   color: #d5897e
+
+}
+
+
+
 
 
 
