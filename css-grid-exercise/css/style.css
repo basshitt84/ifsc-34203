@@ -20,7 +20,7 @@ html {
 }
 
 main {
-/* background-image: url("../img/grid.png");  */
+background-image: url("../img/grid.png"); 
 width:960px;
 margin: 20px auto;
 border: 1px solid #000;  
@@ -35,22 +35,18 @@ header.primary, footer.primary{
  float: left; 
 }
 #blog{
-  /* width:448px; */
-  width:48.908%;
+  width:448px;
   background: rgba(0, 0, 0, 0.6 );
   padding: 20px;
   float: left; 
-  margin-left: 20px;
-
+  margin-left:20px;
 }
 aside{
     background: rgba(0, 0, 0, 0.3 );
-    /* width:448px; */
-     width:48.908%;
-     padding: 20px;
+    width:448px;
+    padding: 20px;
      float: left; 
-    
-    
+    margin-left:20px;
 
 
 
