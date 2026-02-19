@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  
 }
 /* Fix Clearing Bugs */
 
@@ -28,27 +29,30 @@ border: 1px solid #000;
 
 header.primary, footer.primary{
 
- width:916px;
+ /* width:916px; */
+ width: 95.41%;
  background: rgba(0, 0, 0, 0.4);
- margin: 20px;
+ margin: 2.295%;
  padding: 20px;
  float: left; 
 }
 #blog{
   /* width:448px; */
-  width:48.908%;
+  width:46.66%;
   background: rgba(0, 0, 0, 0.6 );
   padding: 20px;
-  float: left; 
-  margin-left: 20px;
+  float: left;
+  margin-left:2.13%;
 
 }
 aside{
     background: rgba(0, 0, 0, 0.3 );
     /* width:448px; */
-     width:48.908%;
+     width:46.66%;
      padding: 20px;
      float: left; 
+     margin-left: 2.13%;
+
     
     
 

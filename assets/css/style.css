@@ -60,15 +60,51 @@ h1 {
 }
 
 
-/* hover effect only for links */
+
 a.box:hover {
   background: #444;
   transform: translateY(-2px);
 }
 
-/* PLACEHOLDER boxes */
+
 .placeholder {
   background: #e8e8ec;
   color: #666;
   border: 2px dashed #bbb;
+}
+
+.lab-box{
+  text-align: left;
+  place-items: start;      
+  display: block;        
+}
+
+
+.lab-title{
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+
+.lab-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.lab-list a{
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.lab-list a:hover{
+  background: rgba(255,255,255,0.10);
 }
