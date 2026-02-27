@@ -32,7 +32,29 @@
       gap: 20px;
       max-width: 80vw;
       margin: 20px auto;
+
+       grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto auto;
     }
+    header.primary {
+  grid-area: 1 / 1 / 2 / 3;
+}
+
+#content {
+  grid-area: 2 / 1 / 4 / 2;
+}
+
+#blog {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+aside {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+footer.primary {
+  grid-area: 4 / 1 / 5 / 3;
+}
   </style>
 
 </head>
