@@ -38,7 +38,7 @@ h1 {
   display: grid;
   gap: 14px;
 
-
+align-items: start;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -78,7 +78,17 @@ a.box:hover {
   place-items: start;      
   display: block;        
 }
+/* Make sure every normal box only takes 1 grid cell */
+.wrapper > .box {
+  grid-column: auto;
+  grid-row: auto;
+}
 
+/* Make ONLY the Grid Lab box big */
+.lab-box {
+  grid-column: span 2;
+  grid-row: span 2;
+}
 
 .lab-title{
   font-size: 1.1rem;
