@@ -1,0 +1,127 @@
+<head>
+  <meta charset="utf-8" />
+  <title>Resume Template</title>
+  <link rel="stylesheet" href="/resume/css/style.css">
+  <meta name="description" content="Resume Template" />
+  <meta name="author" content="Ryan Hitt" />
+
+</head>
+
+
+
+
+
+
+
+<header class="container" id="top">
+  <!-- Main navigation -->
+  <nav class="primary">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Main -->
+<main itemscope itemtype="https://schema.org/Person" class="container">
+  <h1 class="page-title" itemprop="name">Full Name</h1>
+
+  <section id="about">
+    <h2>Personal Details</h2>
+
+    <div class="bio">
+      <img class="profile-pic" src="img/E5F21EAA-F561-4607-91E7-81D9E97A2323.JPG" alt="Your Name">
+      <p itemprop="description">
+        Hello, my name is Ryan Hitt. I am a senior majoring in Web Design and Developement.
+
+When I first started this program, I was definitely a little nervous. It had been years since I’d been in school, and jumping into something new felt like a big move. I originally came to UA Little Rock back in 2008 as a graphic design major, but my music career took off and I followed that path for a long time. I’m still an active professional musician, but eventually I wanted something more stable and future-focused. Coming back to school made sense.
+
+Choosing web design and development was the part that happened a bit on a whim — I knew the job market was strong, and I’d always been curious about how websites were built. Once I got into the coursework, I realized how much I enjoyed the problem-solving and creativity behind it. I still have a lot to learn, but each semester I’m gaining more experience and feeling more confident in my abilities.
+
+Now I’m on track to graduate in Spring 2026, and I’m excited to see where this degree takes me next.
+      </p>
+    </div>
+
+    <dl class="details">
+      <dt>Ryan Hitt</dt>
+      <dd itemprop="name">
+        <span itemprop="givenName">First</span> <span itemprop="familyName">Last</span>
+      </dd>
+
+      <dt>March 29, 1984</dt>
+      <dd><time itemprop="birthDate" datetime="2000-10-12">10/12/2000</time></dd>
+
+      <dt>Caucasion</dt>
+      <dd itemprop="nationality">United States</dd>
+
+      <dt>Little Rock, AR.</dt>
+      <!-- Keep original text, but model as Place for better schema correctness -->
+      <dd itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+        <span itemprop="name">Arkansas</span>
+      </dd>
+
+      <dt>Telephone</dt>
+      <dd>
+        <!-- tel: should be digits; keep visible text as-is -->
+        <a itemprop="telephone" href="tel:5555555555">501.951.0868</a>
+      </dd>
+
+      <dt>Email</dt>
+      <dd>
+        <a itemprop="email" href="mailto:email@mail.com">hittryan745@gmail.com</a>
+      </dd>
+
+      <dt>Address</dt>
+      <dd itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="streetAddress">1016 N. Palm St.</span>
+        <span itemprop="addressLocality">Little Rock</span>
+        <span itemprop="postalCode">72205</span>
+        <span itemprop="addressCountry">USA</span>
+      </dd>
+    </dl>
+
+    <ul class="related-links">
+      <li><a itemprop="sameAs" rel="me" href="https://github.com/basshitt84"> github</a></li>
+      <li><a itemprop="sameAs" rel="me" href="https://linkedin.com/in/ryan-hitt">linkedin</a></li>
+      <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li class="skill" itemprop="knowsAbout">HTML</li>
+      <li class="skill" itemprop="knowsAbout">CSS</li>
+      <li class="skill" itemprop="knowsAbout">Github</li>
+      <li class="skill" itemprop="knowsAbout">Wordpress</li>
+        <li class="skill" itemprop="knowsAbout">Divi</li>
+        <li class="skill" itemprop="knowsAbout">Figma</li>
+        <li class="skill" itemprop="knowsAbout">Canva</li>
+      <li class="skill" itemprop="knowsAbout">Google Sheets</li>
+    </ul>
+  </section>
+
+
+  <section id="education">
+    <h2>Education</h2>
+
+    <article class="certificate" itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+      <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Web Design & Development (IT Minor)
+</h3>
+      <span itemprop="name">University of Arkansas at Little Rock</span>
+      <span itemprop="location" itemscope>Anywhere, USA</span>
+      <span>2024-2026</span>
+    </article>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div id="copyright">
+    &copy; 2026 Name | <a href="#top">Top</a>
+  </div>
+</footer>
+ 
