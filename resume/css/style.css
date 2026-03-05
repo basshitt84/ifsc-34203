@@ -1,4 +1,67 @@
+/* page width + stacked rows */
+
+main {
+  display: grid;
+  gap: 20px;
+}
+
+
+
+
+.page{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+header,
+section,
+footer{
+  background: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+
+header{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+/* nav buttons */
+nav.primary ul{
+  display: flex;
+  gap: 12px;
+  list-style: none;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+nav.primary a{
+  text-decoration: none;
+  background: #555;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+nav.primary a:hover{
+  background: #333;
+}
+
 img[itemprop="image"]{
   width: 200px;
   height: auto;
+}
+\
+.page-title{
+  margin: 0;
 }
