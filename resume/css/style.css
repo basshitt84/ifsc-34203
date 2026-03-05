@@ -1,4 +1,4 @@
-.profile-pic {
+img[itemprop="image"] {
   width: 250px;
-  height: auto;
+height:auto;
 }
