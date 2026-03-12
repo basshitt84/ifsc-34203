@@ -1,0 +1,273 @@
+/* CSS Custom Properties */
+:root {
+   --main-bg-color: #f4f3f1;
+  --primary-type-color: #2a2a2a;
+  --accent-color-1: #c9c5be;
+  --accent-color-2: #6a7c8a;
+  --accent-color-3: #4f5e69;
+  --container-bg: rgba(0, 0, 0, 0.15);
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.25rem;
+  --space-xl: 2rem;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --container-width: 420px;
+  --line-height: 1.6;
+}
+
+/* Box Sizing */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Typography */
+body {
+  margin: 0;
+   font-family: "Roboto", sans-serif;
+  background: var(--main-bg-color);
+  color: var(--primary-type-color);
+  line-height: var(--line-height);
+}
+
+/* Fluid Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  
+}
+
+/* Links */
+a:link,
+a:visited {
+  color: var(--primary-type-color);
+}
+
+/* Layout Container */
+.container {
+  width: min(100% - 2rem, var(--container-width));
+  margin: 0 auto;
+  background: var(--container-bg);
+}
+
+/* Header / Nav */
+header.container {
+  margin-top: var(--space-lg);
+}
+
+nav.primary {
+  padding: 1px;
+}
+
+nav.primary ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+  list-style: none;
+  margin: 0;
+  padding: var(--space-lg);
+}
+
+nav.primary li {
+  list-style-type: none;
+}
+
+nav.primary a:link,
+nav.primary a:visited {
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background: var(--accent-color-2);
+  transition: background-color 0.5s ease;
+  border-radius: var(--radius-sm);
+}
+
+nav.primary a:hover {
+  background: var(--accent-color-3);
+}
+
+/* Main */
+main.container {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "about"
+    "education"
+    "experience"
+    "skills";
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+/* Page Title */
+.page-title {
+  grid-area: title;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  font-variant: small-caps;
+  display: flex;
+  align-items: center;
+}
+
+.page-title:before,
+.page-title:after {
+  background-color: var(--accent-color-1);
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  position: relative;
+}
+
+.page-title:before {
+  margin-right: 15px;
+}
+
+.page-title:after {
+  margin-left: 15px;
+}
+
+/* Sections */
+section {
+  background: rgba(255, 255, 255, 0.35);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+}
+
+#about {
+  grid-area: about;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+
+
+#education {
+  grid-area: education;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Bio */
+.bio {
+  display: grid;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.bio img {
+  width: 100%;
+  max-width: 220px;
+  margin:0 auto;
+}
+
+/* Details List */
+.details {
+  font-size: 0.9rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 0 var(--space-lg) 0;
+}
+
+.details dt {
+  font-weight: 700;
+  padding: 0.5rem 0 0.25rem;
+  border-bottom: 1px solid var(--accent-color-1);
+}
+
+.details dd {
+  margin: 0;
+  padding: 0.25rem 0 0.75rem;
+  border-bottom: 1px solid var(--accent-color-1);
+}
+
+.details dd span {
+  display: block;
+}
+
+/* Related Links */
+.related-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.related-links li {
+  margin: 0;
+}
+
+.related-links a {
+  display: block;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #ffffff;
+  background: var(--accent-color-2);
+  transition: background-color 0.5s ease;
+  border-radius: var(--radius-sm);
+}
+
+.related-links a:hover {
+  background: var(--accent-color-3);
+}
+
+/* Skills */
+#skills ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+#skills li {
+  list-style-type: square;
+  margin-bottom: 0.35rem;
+}
+
+/* Experience / Education */
+.job,
+.certificate {
+  border-bottom: 1px solid var(--accent-color-1);
+  padding-bottom: var(--space-lg);
+}
+
+.job h3,
+.certificate h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+}
+
+.job span,
+.certificate span {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
