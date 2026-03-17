@@ -136,3 +136,15 @@ a.box:hover {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.box img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.box span {
+  display: block;
+  text-align: center;
+  font-size: 0.8rem;
+}
