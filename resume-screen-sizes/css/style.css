@@ -1,6 +1,6 @@
 /* CSS Custom Properties */
 :root {
-   --main-bg-color: #f4f3f1;
+  --main-bg-color: #f4f3f1;
   --primary-type-color: #2a2a2a;
   --accent-color-1: #c9c5be;
   --accent-color-2: #6a7c8a;
@@ -34,7 +34,7 @@ html {
 /* Typography */
 body {
   margin: 0;
-   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
   background: var(--main-bg-color);
   color: var(--primary-type-color);
   line-height: var(--line-height);
@@ -42,10 +42,9 @@ body {
 
 /* Fluid Images */
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
-  
 }
 
 /* Links */
@@ -80,7 +79,7 @@ nav.primary ul {
 }
 
 nav.primary li {
-  list-style-type: none;
+  list-style: none;
 }
 
 nav.primary a:link,
@@ -93,8 +92,8 @@ nav.primary a:visited {
   font-size: 0.75rem;
   color: #ffffff;
   background: var(--accent-color-2);
-  transition: background-color 0.5s ease;
   border-radius: var(--radius-sm);
+  transition: background-color 0.5s ease;
 }
 
 nav.primary a:hover {
@@ -107,9 +106,8 @@ main.container {
   grid-template-areas:
     "title"
     "about"
-    "education"
-    "experience"
-    "skills";
+    "skills"
+    "education";
   gap: var(--space-lg);
   padding: var(--space-lg);
   margin-top: var(--space-lg);
@@ -118,21 +116,20 @@ main.container {
 /* Page Title */
 .page-title {
   grid-area: title;
+  display: flex;
+  align-items: center;
   margin: 0;
   text-align: center;
   font-weight: 400;
   font-variant: small-caps;
-  display: flex;
-  align-items: center;
 }
 
 .page-title:before,
 .page-title:after {
-  background-color: var(--accent-color-1);
   content: "";
   flex-grow: 1;
   height: 1px;
-  position: relative;
+  background-color: var(--accent-color-1);
 }
 
 .page-title:before {
@@ -158,8 +155,6 @@ section {
   grid-area: skills;
 }
 
-
-
 #education {
   grid-area: education;
 }
@@ -178,14 +173,14 @@ section h2 {
 .bio img {
   width: 100%;
   max-width: 220px;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 /* Details List */
 .details {
-  font-size: 0.9rem;
   display: grid;
   grid-template-columns: 1fr;
+  font-size: 0.9rem;
   margin: 0 0 var(--space-lg) 0;
 }
 
@@ -228,8 +223,8 @@ section h2 {
   font-size: 0.75rem;
   color: #ffffff;
   background: var(--accent-color-2);
-  transition: background-color 0.5s ease;
   border-radius: var(--radius-sm);
+  transition: background-color 0.5s ease;
 }
 
 .related-links a:hover {
@@ -247,7 +242,7 @@ section h2 {
   margin-bottom: 0.35rem;
 }
 
-/* Experience / Education */
+/* Education */
 .job,
 .certificate {
   border-bottom: 1px solid var(--accent-color-1);
@@ -270,4 +265,97 @@ section h2 {
 footer {
   text-align: center;
   padding: var(--space-xl) 0;
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) {
+
+  /* Container Width */
+  .container {
+    width: min(100% - 2rem, 900px);
+  }
+
+  header.container {
+    max-width: 900px;
+  }
+
+  /* Main Grid */
+  main.container {
+    max-width: 900px;
+    grid-template-columns: 36.5% auto;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills education";
+  }
+
+  /* Navigation */
+  nav.primary ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* About Grid */
+  #about {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas:
+      "photo details"
+      "bio bio"
+      "related related";
+  }
+
+  /* Bio Layout */
+  .bio {
+    display: contents;
+  }
+
+  .bio img {
+    grid-area: photo;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .bio p {
+    grid-area: bio;
+    margin: 0;
+  }
+
+  /* Details List (Tablet) */
+  .details {
+    grid-area: details;
+    font-size: 0.8rem;
+    grid-template: repeat(7, auto) / 8em 1fr;
+    margin-bottom: 0;
+    align-self: start;
+    align-content: start;
+  }
+
+  .details dt {
+    grid-column: 1;
+    font-weight: 700;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--accent-color-1);
+  }
+
+  .details dd {
+    grid-column: 2;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--accent-color-1);
+  }
+
+  /* Related Links (Tablet) */
+  .related-links {
+    grid-area: related;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    border-bottom: 1px solid var(--accent-color-1);
+    padding-bottom: 2rem;
+  }
+
+  .related-links li {
+    margin-right: 20px;
+  }
 }
