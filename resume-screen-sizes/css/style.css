@@ -270,7 +270,7 @@ footer {
 /* Tablet View */
 @media screen and (min-width: 768px) {
 
-  /* Container Width */
+ 
   .container {
     width: min(100% - 2rem, 900px);
   }
@@ -279,7 +279,7 @@ footer {
     max-width: 900px;
   }
 
-  /* Main Grid */
+  
   main.container {
     max-width: 900px;
     grid-template-columns: 36.5% auto;
@@ -289,12 +289,11 @@ footer {
       "skills education";
   }
 
-  /* Navigation */
   nav.primary ul {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* About Grid */
+  
   #about {
     display: grid;
     gap: 2em;
@@ -305,7 +304,7 @@ footer {
       "related related";
   }
 
-  /* Bio Layout */
+  
   .bio {
     display: contents;
   }
@@ -321,7 +320,7 @@ footer {
     margin: 0;
   }
 
-  /* Details List (Tablet) */
+ 
   .details {
     grid-area: details;
     font-size: 0.8rem;
@@ -345,7 +344,7 @@ footer {
     border-bottom: 1px solid var(--accent-color-1);
   }
 
-  /* Related Links (Tablet) */
+ 
   .related-links {
     grid-area: related;
     flex-direction: row;
@@ -358,4 +357,79 @@ footer {
   .related-links li {
     margin-right: 20px;
   }
+}
+
+
+
+
+/* Desktop View */
+@media screen and (min-width: 992px) {
+
+
+  .container {
+    width: min(100% - 2rem, 1200px);
+  }
+
+  header.container {
+    max-width: 1200px;
+  }
+
+ 
+  main.container {
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "title title"
+      "about about"
+      "skills education";
+    gap: 2.5rem;
+  }
+
+
+  nav.primary ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+
+  #about {
+    grid-template-columns: 320px 1fr;
+    gap: 2.5rem;
+  }
+
+
+  .bio p {
+  max-width: 100rem;
+  
+}
+
+  
+  .details {
+    font-size: 0.85rem;
+  }
+
+
+  #skills,
+  #education {
+    padding: 2rem;
+  }
+
+
+  section {
+    padding: 2rem;
+  }
+
+
+  .related-links {
+    padding-bottom: 2.5rem;
+  }
+
+  .page-title:before,
+  .page-title:after {
+    max-width: 400px;
+  }
+}
+
+.page-title {
+  justify-content: center;
 }
