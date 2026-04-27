@@ -73,7 +73,7 @@ a.box:hover {
   border: 2px dashed #bbb;
 }
 
-..lab-box {
+.lab-box {
   grid-column: auto;
   grid-row: auto;
   display: block;
