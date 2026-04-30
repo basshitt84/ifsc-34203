@@ -1,13 +1,13 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+
 html { box-sizing: border-box; }
 *, *:before, *:after { box-sizing: inherit; }
 
-/* Fix Clearing Bugs (fine to keep, though grid doesn’t need it) */
+
 .cf:before, .cf:after { content: " "; display: table; }
 .cf:after { clear: both; }
 
 main{
-  /* background-image: url("../img/grid.png"); */
+
   background-size: contain;
   width: 960px;
   margin: 20px auto;
