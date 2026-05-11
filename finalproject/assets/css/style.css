@@ -1,0 +1,179 @@
+/* Base Setup */
+
+:root {
+  --main-bg-color: #ebd6d1;
+  --header-color: #d5a996;
+  --primary-type-color: #111111;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: var(--main-bg-color);
+  color: var(--primary-type-color);
+  font-family: "Inter", sans-serif;
+}
+.site-logo,
+.primary-nav,
+.social-links {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 400;
+}
+
+/* Header */
+
+.site-header {
+  background: var(--header-color);
+}
+
+.header-inner {
+  width: min(100% - 2rem, 1400px);
+  min-height: 110px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.site-logo a {
+  color: var(--primary-type-color);
+  text-decoration: none;
+}
+
+.primary-nav ul {
+  display: flex;
+  gap: 3rem;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  color: var(--primary-type-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  color: var(--primary-type-color);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+/* Intro */
+
+.intro {
+  width: min(100% - 2rem, 1400px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 4rem 0;
+}
+
+.intro-text h2 {
+  margin-top: 0;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.intro-text p {
+  max-width: 680px;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.intro-text cite {
+  font-style: italic;
+}
+
+.intro-text a {
+  color: var(--primary-type-color);
+  text-decoration: none;
+}
+/* About */
+
+.about {
+  width: min(100% - 2rem, 1400px);
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.about-content {
+  max-width: 950px;
+}
+
+.about h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.about p {
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 1.45;
+}
+
+/* Images */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .intro {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) {
+  .intro-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .intro-text a {
+  color: var(--primary-type-color);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+
+.intro-text a:hover {
+  opacity: 0.6;
+}
