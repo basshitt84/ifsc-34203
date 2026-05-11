@@ -149,6 +149,57 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* Shows */
+
+.shows {
+  width: min(100% - 2rem, 1400px);
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+
+.shows h2 {
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.show-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.show-image img {
+  width: 100%;
+}
+
+.show-info {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.show-info a {
+  color: var(--primary-type-color);
+  text-decoration: none;
+}
+
+.show-info a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .show-card {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .show-image img {
+    max-width: 520px;
+  }
+}
 
 /* Tablet */
 
