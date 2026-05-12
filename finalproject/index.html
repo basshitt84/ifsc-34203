@@ -21,40 +21,44 @@
 </head>
 
 <body>
-    <header class="site-header" id="top">
-        <div class="header-inner">
-            <h1 class="site-logo"><a href="#top">OR</a></h1>
+   <header class="site-header" id="top">
+  <div class="header-inner">
+    <h1 class="site-logo"><a href="#top">OR</a></h1>
 
-            <nav class="primary-nav" aria-label="Main navigation">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#shows">Shows</a></li>
-                    <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#photos">Photos</a></li>
-                </ul>
-            </nav>
+    <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+      <span class="sr-only">Menu</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
 
-            <div class="social-links" aria-label="Social media links">
-                <a href="https://ororor.bandcamp.com/music" target="_blank" aria-label="Bandcamp">
-                    <i class="fa-brands fa-bandcamp"></i>
-                </a>
+    <nav class="primary-nav" id="primary-menu" aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#shows">Shows</a></li>
+        <li><a href="#catalog">Catalog</a></li>
+        <li><a href="#photos">Photos</a></li>
+      </ul>
+    </nav>
 
-                <a href="https://www.instagram.com/orororband/" target="_blank" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
+    <div class="social-links" aria-label="Social media links">
+      <a href="https://ororor.bandcamp.com/music" target="_blank" aria-label="Bandcamp">
+        <i class="fa-brands fa-bandcamp"></i>
+      </a>
 
-                <a href="https://open.spotify.com/artist/3gqfBZl9TTjmdG4wwqDO6p?si=NZqUVBC1RXKXm1nCfCgTHA"
-                    target="_blank" aria-label="Spotify">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
+      <a href="https://www.instagram.com/orororband/" target="_blank" aria-label="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
 
-                <a href="https://music.apple.com/us/artist/ororor/1490529257" target="_blank" aria-label="Apple Music">
-                    <i class="fa-brands fa-itunes-note"></i>
-                </a>
-            </div>
-        </div>
-    </header>
+      <a href="https://open.spotify.com/artist/3gqfBZl9TTjmdG4wwqDO6p?si=NZqUVBC1RXKXm1nCfCgTHA" target="_blank" aria-label="Spotify">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+
+      <a href="https://music.apple.com/us/artist/ororor/1490529257" target="_blank" aria-label="Apple Music">
+        <i class="fa-brands fa-itunes-note"></i>
+      </a>
+    </div>
+  </div>
+</header>
     <main>
         <section class="intro" id="home">
             <div class="intro-text">
@@ -114,7 +118,114 @@
                 </div>
             </article>
         </section>
+        <section class="catalog" id="catalog">
+  <h2>Catalog</h2>
+
+  <div class="catalog-grid">
+    <article class="album-card">
+      <button class="album-inner">
+        <span class="album-front">
+          <img src="assets/img/adoreusop.webp" alt="Adore Us album cover">
+        </span>
+       <span class="album-back">
+  <strong>Adore Us</strong>
+
+  <p>
+    1. Couple 05:11<br>
+    2. Crumbs 04:05<br>
+    3. It Mind 04:15<br>
+    4. Leeched 06:32<br>
+    5. When Spoken 07:27<br>
+    6. Dollhouse Lightning 03:41<br>
+    7. Cure for Drowning 03:41<br>
+    8. Back Teeth to Cheek 05:54
+  </p>
+
+  <p>Released February 13, 2026</p>
+</span>
+      </button>
+    </article>
+
+    <article class="album-card">
+      <button class="album-inner">
+        <span class="album-front">
+          <img src="assets/img/notownop.webp" alt="No Town album cover">
+        </span>
+        <span class="album-back">
+  <strong>No Town</strong>
+
+  <p>
+    1. Casbah 03:22<br>
+    2. Menacer 04:28<br>
+    3. More Gods 07:03<br>
+    4. Casbah (Country Florist Remix) 04:14<br>
+    5. Menacer (EXTENDED NOTOWN DISCO-DUBBIN' & NIGHTCLUBBIN' 12" MIX) 07:28
+  </p>
+
+  <p>Released November 13, 2021</p>
+</span>
+      </button>
+    </article>
+
+    <article class="album-card">
+      <button class="album-inner">
+        <span class="album-front">
+          <img src="assets/img/monotonyop.webp" alt="Monotony Collector album cover">
+        </span>
+        <span class="album-back">
+  <strong>Monotony Collector</strong>
+
+  <p>
+    Monotony Collector (Single) 05:15
+  </p>
+
+  <p>Released December 6, 2019</p>
+</span>
+      </button>
+    </article>
+
+    <article class="album-card">
+      <button class="album-inner">
+        <span class="album-front">
+          <img src="assets/img/danielop.webp" alt="Daniel single cover">
+        </span>
+        <span class="album-back">
+  <strong>Daniel</strong>
+
+  <p>
+    Daniel (Single) 03:28
+  </p>
+
+  <p>Released August 30, 2019</p>
+</span>
+      </button>
+    </article>
+
+    <article class="album-card">
+      <button class="album-inner">
+        <span class="album-front">
+          <img src="assets/img/2op.webp" alt="OrOrOr release cover">
+        </span>
+       <span class="album-back">
+  <strong>OR</strong>
+
+  <p>
+    1. Eat Dust 04:44<br>
+    2. Hide It 03:26<br>
+    3. A Funeral 05:47<br>
+    4. Speaks 02:48<br>
+    5. Big Fog 04:11
+  </p>
+
+  <p>Released March 23, 2018</p>
+</span>
+      </button>
+    </article>
+  </div>
+</section>
+        
     </main>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
